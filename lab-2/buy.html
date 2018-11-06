@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Покупка</title>
+    <link href=index.css rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div style="display:none" id='buffer'>
+
+  </div>
+        <span>name</span>
+        <input id='name' type="text" value='name' readonly>
+        <span>price</span>
+        <input id='price' type="number" readonly>
+        <span>количество</span>
+        <input id='quantity' type="number">
+        <br/>
+        <span>чек</span>
+        <br/>
+        <span>да</span>
+        <input type="radio" name="chek" value="1" id='y' checked>
+        <span>нет</span>
+        <input type="radio" name="chek" value="0" >
+        <button id='buy'>buy</button>
+        <a href='chek.html'><button>Показать чек</button></a>
+    <script src="buy.js"></script>
+</body>
+</html>

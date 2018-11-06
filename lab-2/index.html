@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+    <link href=index.css rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div id="showButtons">
+            <h3>Show only:</h3>
+            <div>
+                <button id="showNamePrice" >Name, Price</button>
+                <button id="showNamePriceQuantity">Name, Price, Quantity</button>
+                <button id="showAll">Id, Name, Price, Quality</button>
+            </div>
+        </div>
+        <div id="actionsButtons" >
+            <h3>Actions:</h3>
+            <div>
+                <button id="addToTable">Добавить</button>
+                <button id="backup">Назад</button>
+                <a><button>Купить</button></a>
+            </div>
+            <h3>Table:</h3>
+        </div>
+
+    </div>
+
+    <div id="tableContainer"></div>
+
+    <div id="formContainer">
+        <form id="promptForm">
+          <div id="promptMessage">Добавление элемента</div>
+          <input name="Id" type="number" placeholder="Id">
+          <input name="Name" type="text" placeholder="Название">
+          <input name="Price" type="number" placeholder=Цена>
+          <input name="Quantity" type="number" placeholder="Количество">
+          <input type="submit" value="Ок">
+          <input type="button" name="cancel" value="Отмена">
+        </form>
+    </div>
+    <script src="createTable2.js"></script>
+</body>
+</html>
